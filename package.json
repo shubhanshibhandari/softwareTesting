@@ -1,0 +1,27 @@
+{
+  "name": "book-store-mern-stack-main",
+  "version": "1.0.0",
+  "description": "## Lessons",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "mocha test --timeout 10000",
+    "test:integration": "mocha test/int.test.js --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "mongoose": "^8.0.1",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
