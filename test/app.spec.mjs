@@ -9,12 +9,10 @@ chai.use(chaiHttp);
 
 describe('POST /books', () => {
   after(() => {
-    // Close the server after all tests are done
     server.close();
   });
 
   beforeEach(async () => {
-    // No need to clear the collection for this example
   });
 
   it('should create a new book', async () => {
@@ -28,11 +26,7 @@ describe('POST /books', () => {
       .request(app)
       .post('/books')
       .send(bookData);
-
-    // Expect a successful response with a 201 status code
     expect(res).to.have.status(201);
-
-    // Expect the response body to have the expected title
     expect(res.body).to.have.property('title', 'Test Book');
   });
 
@@ -45,8 +39,6 @@ describe('POST /books', () => {
       .request(app)
       .post('/books')
       .send(bookData);
-
-    // Expect a validation error response with a 400 status code
     expect(res).to.have.status(400);
 
     // Expect the response body to contain the expected error message
