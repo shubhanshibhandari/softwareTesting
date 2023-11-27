@@ -6,10 +6,10 @@ describe('Integration Test: Frontend-Backend Interaction', () => {
   it('should get books from the backend', async () => {
     const response = await request(app).get('/books');
     expect(response.status).to.equal(200);
-    // Add more expectations based on your API response
+   
   });
 
-  // Add your other test cases using ESM syntax
+
 });
 
   
