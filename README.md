@@ -2,8 +2,8 @@ the book store project is a comprehensive web application built with the MERN (M
 
 
 contributors-
-harsh Tripathi - mocha unit testing , documentation.
-Shubhanshi Bhandari - CIM, Cypres e2e testing , documentation.
+# harsh Tripathi - mocha unit testing , documentation.
+# Shubhanshi Bhandari - CIM, Cypres e2e testing , documentation.
 
 
 
